@@ -1,0 +1,32 @@
+body {
+	background-image: url("../images/background.png")
+}
+
+.container {
+	width: 100%;
+	width: 960px;
+	margin: auto;
+	background-color: #fff;
+	line-height: 30px;
+	padding-top: 10px;
+	text-align: center;
+	background-color: #c9e3fb;
+	font-family: 'Marcellus', serif;
+}
+
+h1 {
+	font-family: 'Marcellus', serif;
+	font-weight: 700;
+	color: black;
+	text-align: center;
+	font-size: 45px;
+}
+
+input {
+	display: inline;
+
+}
+
+p {
+	font-size: 20px;
+}
