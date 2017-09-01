@@ -166,10 +166,10 @@
 		console.log(unanswered);
 
 		$(".question").html(
-			"<h2>Done!</h2>"+
-			"You got " + matches + " right! "+
-			"You got " + wrong + " wrong "+
-			"You left " + unanswered + " unaswered");
+			"<p>Done!</p>"+
+			"<p>You got " + matches + " right!</p> "+
+			"<p>You got " + wrong + " wrong!</p> "+
+			"<p>You left " + unanswered + " unaswered</p>");
 							
 
 	}
