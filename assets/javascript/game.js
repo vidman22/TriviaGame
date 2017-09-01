@@ -6,7 +6,7 @@
     var intervalId;
 
 
-    $("#display").one("click", function() {
+    $("body").one("click", function() {
       intervalId = setInterval(decrement, 1000);
       
       // Display the questions
@@ -100,7 +100,7 @@
         $(".question").html(
 			"<h2>Done!</h2>"+
 			"You got " + matches + " of 5 correct!");
-      
+
 
         return;
       }
@@ -117,7 +117,7 @@
 	var values = [];
 	var answers = ["1", "5", "7", "9", "12"];
 	var matches = 0;
-	var unmatched = 0;
+	var unanswered = 0;
 	console.log(answers);
 
   function handleClick() {
@@ -155,19 +155,21 @@
 		matches++;
 
 	}
-		if(values[i] ===! answers[i]) {
-		unmatched++;
+		if(values[i] == undefined) {
+		unanswered++;
 		}
 	}
 		console.log(matches);
-		console.log(unmatched);
+		console.log(unanswered);
 
-		var unaswered = answers.length - (matches + unmatched);
-		var incorrect = answers.length - 
+		var wrong = answers.length - (matches + unanswered);
+		console.log(unanswered);
 
 		$(".question").html(
 			"<h2>Done!</h2>"+
-			"You got " + matches + " of 5 correct!");
+			"You got " + matches + " right! "+
+			"You got " + wrong + " wrong "+
+			"You left " + unanswered + " unaswered");
 							
 
 	}
