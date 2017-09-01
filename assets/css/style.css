@@ -1,32 +1,57 @@
 body {
 	background-image: url("../images/background.png")
+	font: 44px 'Marcellus', serif;
 }
 
 .container {
 	width: 100%;
 	width: 960px;
+	min-height: 500px;
 	margin: auto;
 	background-color: #fff;
 	line-height: 30px;
-	padding-top: 10px;
 	text-align: center;
 	background-color: #c9e3fb;
 	font-family: 'Marcellus', serif;
 }
 
+.question p{
+	font-size: 30px;
+}
+
+ #start {
+ 	display: block;
+ 	clear: both;
+	text-align: center;
+	width: 110px;
+	height: 65px;
+	background-color: green;
+	border-color: black;
+	border-width: 2px;
+	font-size: 40px;
+
+}
+ 
 h1 {
 	font-family: 'Marcellus', serif;
 	font-weight: 700;
 	color: black;
 	text-align: center;
 	font-size: 45px;
+	padding-top: 10px;
 }
 
 input {
+
 	display: inline;
+	margin: 0px 0px 0px 22px;
+	
 
 }
 
-p {
-	font-size: 20px;
+#q1 {
+	font-size: 20px; 
 }
+
+
+
