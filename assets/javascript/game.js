@@ -95,7 +95,13 @@
 
         stop();
 
-        alert("Time Up!");
+        // alert("Time Up!");
+
+        $(".question").html(
+			"<h2>Done!</h2>"+
+			"You got " + matches + " of 5 correct!");
+      
+
         return;
       }
 
